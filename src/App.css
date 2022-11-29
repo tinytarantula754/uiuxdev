@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+.square {
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 10px 10px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.square:hover {
+  transform: scale(1.1);
+  background-color: #dbdbdb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.square.selected {
+  background-color: #dbdbdb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+body {
+  font-family: Arial;
+  letter-spacing: 0.6px;
+  padding: 20px 160px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.pokelist {
+  width: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.row-far {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.circle {
+  background-color: #ededed;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 0px 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.poke {
+  width: 12%;
+  max-width: 12%;
+  height: auto;
+  max-height: auto;
+  margin: 10px;
+  object-fit: contain;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.poke-circle {
+  width: 60px;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
